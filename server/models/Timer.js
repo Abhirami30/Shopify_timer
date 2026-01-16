@@ -162,3 +162,4 @@ TimerSchema.methods.computeStatus = function () {
 };
 
 export default mongoose.model("Timer", TimerSchema);
+
