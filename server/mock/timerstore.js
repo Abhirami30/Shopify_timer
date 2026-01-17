@@ -1,0 +1,25 @@
+export const timers = [
+  {
+    id: "timer_1",
+    shop: "abhi-timer-test.myshopify.com",
+    type: "EVERGREEN",
+    durationSeconds: 1800,
+    productId: "test-product-123",
+    headline: "Hurry! Limited Time",
+    subtext: "Offer expires soon",
+    impressions: 0,
+    createdAt: new Date(),
+  },
+  {
+    id: "timer_2",
+    shop: "abhi-timer-test.myshopify.com",
+    type: "FIXED",
+    startAt: new Date(Date.now() - 3600000),
+    endAt: new Date(Date.now() + 3600000),
+    productId: "test-product-456",
+    headline: "Flash Sale Ending Soon",
+    subtext: "Only 1 hour left",
+    impressions: 0,
+    createdAt: new Date(),
+  },
+];
