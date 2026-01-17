@@ -45,17 +45,27 @@ Given the limited timeframe and the fact that this was my first hands-on experie
 
 ---
 
-## AI-Assisted Timer Generation (Conceptual)
+## AI-Assisted Timer Generation (Concept)
 
-Given my background in AI, I designed the system with an AI-assisted timer generation flow in mind:
+As an optional enhancement, the app is designed to support an AI-assisted flow for faster timer creation.
 
-- Merchant provides intent (e.g. “flash sale”, “launch offer”)
-- AI suggests timer type, duration, and copy
-- Suggestions are **assistive only**, editable, and never auto-published
+Proposed flow:
 
-Due to time constraints, this remains a scaffolded concept rather than a fully wired feature.
+- Merchant selects a product or collection
+- Merchant provides a short intent (e.g. “flash sale”, “launch offer”)
+- AI suggests:
+  - timer type (fixed or evergreen)
+  - duration
+  - basic urgency copy
 
----
+The AI is strictly assistive:
+
+- Suggestions are editable
+- Nothing is auto-saved or auto-published
+- No discounts, pricing, or false scarcity are generated unless explicitly stated by the merchant
+
+Given the limited timeframe and environment constraints, this feature is documented at a design level rather than fully implemented.  
+The backend is structured so that a deterministic or LLM-based AI service can be plugged in later without changing the API contract.
 
 ## Technical Challenges Faced
 
